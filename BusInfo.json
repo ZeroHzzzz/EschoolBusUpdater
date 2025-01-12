@@ -1,0 +1,91 @@
+{
+    "count": 23,
+    "num_pages": 23,
+    "next": "http://api.pinbayun.com/api/v2/staff/shuttlebus/?page=2&page_size=1&search=",
+    "previous": null,
+    "results": [
+        {
+            "id": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+            "ctime": "2021-05-31 14:09:09",
+            "mtime": "2024-12-31 11:32:12",
+            "shuttle_name": "直达线（朝晖-屏峰）",
+            "seats": 47,
+            "apply_expired_minutes": 16,
+            "price": 400,
+            "stations_json": [],
+            "station_names": "",
+            "departure_time": "00:00",
+            "order_mode": 10,
+            "check_mode": 20,
+            "order_mode_name": "预约模式",
+            "check_mode_name": "硬件检票",
+            "go_stations_json": [
+                {
+                    "id": "1c71f2c0-0d0b-4f13-bd66-9a4afea5c380",
+                    "station_name": "邵科馆",
+                    "station_seq": 0,
+                    "longitude": 120.174092,
+                    "latitude": 30.299008
+                },
+                {
+                    "id": "150be63f-c092-4531-9ace-510f959bcced",
+                    "station_name": "西溪医院横街公交站",
+                    "station_seq": 1,
+                    "longitude": 120.05609,
+                    "latitude": 30.236336
+                },
+                {
+                    "id": "769e0c19-c621-42d8-a46e-e2bccb50d124",
+                    "station_name": "1-A区块（3#楼西侧）",
+                    "station_seq": 2,
+                    "longitude": 120.051868,
+                    "latitude": 30.238154
+                },
+                {
+                    "id": "e800520f-d4ea-4407-85ed-8e01ec25ed73",
+                    "station_name": "乌溪江路北口",
+                    "station_seq": 3,
+                    "longitude": 120.045324,
+                    "latitude": 30.234593
+                },
+                {
+                    "id": "0a57f67d-ceda-4e5e-9c36-ff2662ff21f5",
+                    "station_name": "语林楼",
+                    "station_seq": 4,
+                    "longitude": 120.043752,
+                    "latitude": 30.230092
+                }
+            ],
+            "return_stations_json": [],
+            "auto_dispatch": false,
+            "people_vehicle": false,
+            "apply_dispatch_minutes": 0,
+            "long_distance": false,
+            "overtime": false,
+            "ticket_of_buses": true,
+            "reserved_seat": 0,
+            "other_price": {
+                "teacher": 0,
+                "student": 400,
+                "student_ticket": 0
+            },
+            "bus_reminder": 30,
+            "sort_number": 0,
+            "order_limit_on": true,
+            "order_limit_minute": 120,
+            "net_mode": 0,
+            "ticket_check_minutes": 16,
+            "bluk_order": false,
+            "is_bluk_order_staff_level": false,
+            "bluk_order_staff_levels": "[]",
+            "remainder_remind": 0,
+            "remind_admin": "[]",
+            "refund_at_dispath": false,
+            "refund_at_dispath_limit_minute": 0,
+            "is_active": true,
+            "instance_days": 10,
+            "driver_dispatch": false,
+            "busfavourite": false
+        }
+    ]
+}

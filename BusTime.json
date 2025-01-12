@@ -1,0 +1,1052 @@
+[
+    {
+        "shuttle_bus_vo": {
+            "id": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+            "ctime": "2021-05-31 14:09:09",
+            "mtime": "2024-12-31 11:32:12",
+            "shuttle_name": "直达线（朝晖-屏峰）",
+            "seats": 47,
+            "apply_expired_minutes": 16,
+            "price": 400,
+            "stations_json": [
+                {
+                    "id": "1c71f2c0-0d0b-4f13-bd66-9a4afea5c380",
+                    "station_name": "邵科馆",
+                    "station_seq": 0,
+                    "latitude": 30.299008,
+                    "longitude": 120.174092
+                },
+                {
+                    "id": "150be63f-c092-4531-9ace-510f959bcced",
+                    "station_name": "西溪医院横街公交站",
+                    "station_seq": 1,
+                    "latitude": 30.236336,
+                    "longitude": 120.05609
+                },
+                {
+                    "id": "769e0c19-c621-42d8-a46e-e2bccb50d124",
+                    "station_name": "1-A区块（3#楼西侧）",
+                    "station_seq": 2,
+                    "latitude": 30.238154,
+                    "longitude": 120.051868
+                },
+                {
+                    "id": "e800520f-d4ea-4407-85ed-8e01ec25ed73",
+                    "station_name": "乌溪江路北口",
+                    "station_seq": 3,
+                    "latitude": 30.234593,
+                    "longitude": 120.045324
+                },
+                {
+                    "id": "0a57f67d-ceda-4e5e-9c36-ff2662ff21f5",
+                    "station_name": "语林楼",
+                    "station_seq": 4,
+                    "latitude": 30.230092,
+                    "longitude": 120.043752
+                }
+            ],
+            "station_names": [],
+            "departure_time": "00:00",
+            "order_mode": 10,
+            "check_mode": 20,
+            "order_mode_name": "预约模式",
+            "check_mode_name": "硬件检票",
+            "go_stations_json": [
+                {
+                    "id": "1c71f2c0-0d0b-4f13-bd66-9a4afea5c380",
+                    "station_name": "邵科馆",
+                    "station_seq": 0,
+                    "latitude": 30.299008,
+                    "longitude": 120.174092
+                },
+                {
+                    "id": "150be63f-c092-4531-9ace-510f959bcced",
+                    "station_name": "西溪医院横街公交站",
+                    "station_seq": 1,
+                    "latitude": 30.236336,
+                    "longitude": 120.05609
+                },
+                {
+                    "id": "769e0c19-c621-42d8-a46e-e2bccb50d124",
+                    "station_name": "1-A区块（3#楼西侧）",
+                    "station_seq": 2,
+                    "latitude": 30.238154,
+                    "longitude": 120.051868
+                },
+                {
+                    "id": "e800520f-d4ea-4407-85ed-8e01ec25ed73",
+                    "station_name": "乌溪江路北口",
+                    "station_seq": 3,
+                    "latitude": 30.234593,
+                    "longitude": 120.045324
+                },
+                {
+                    "id": "0a57f67d-ceda-4e5e-9c36-ff2662ff21f5",
+                    "station_name": "语林楼",
+                    "station_seq": 4,
+                    "latitude": 30.230092,
+                    "longitude": 120.043752
+                }
+            ],
+            "return_stations_json": [],
+            "auto_dispatch": false,
+            "people_vehicle": false,
+            "apply_dispatch_minutes": 0,
+            "long_distance": false,
+            "overtime": false,
+            "ticket_of_buses": true,
+            "reserved_seat": 0,
+            "other_price": {
+                "teacher": 0,
+                "student": 400,
+                "student_ticket": 0
+            },
+            "bus_reminder": 30,
+            "sort_number": 0,
+            "order_limit_on": true,
+            "order_limit_minute": 120,
+            "net_mode": 0,
+            "ticket_check_minutes": 16,
+            "bluk_order": false,
+            "is_bluk_order_staff_level": false,
+            "bluk_order_staff_levels": "[]",
+            "remainder_remind": 0,
+            "remind_admin": "[]",
+            "refund_at_dispath": false,
+            "refund_at_dispath_limit_minute": 0,
+            "is_active": true,
+            "instance_days": 10,
+            "driver_dispatch": false,
+            "bus_times": [
+                {
+                    "departure_time": "07:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "9798cc42-171c-409c-9afa-6a087a96d515",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "12:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "42e11de1-728c-4b37-bdc8-370d99e92e49",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "15:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "f31ed91f-4f76-4da8-888e-330dfff465c3",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "16:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "fed37075-380e-4bd0-bc39-1a9f99ca892c",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "17:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "86f3406d-f677-42eb-a7e7-95b2dcb6fe61",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "20:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "0380637c-b875-4780-9795-a1144f6339d4",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "21:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "5c0e1a77-9c94-4f89-a220-46313b690128",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "22:00",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "933084e3-598b-460b-b1be-ef6ec2a04ae4",
+                    "ctime": "2021-09-03 21:27:17",
+                    "mtime": "2021-09-03 21:27:17"
+                }
+            ]
+        },
+        "departure_time": "07:20",
+        "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+        "shuttle_type": -10,
+        "shuttle_type_name": "去程",
+        "punctuality_time": null,
+        "id": "9798cc42-171c-409c-9afa-6a087a96d515",
+        "ctime": "2021-05-31 14:09:09",
+        "mtime": "2021-05-31 14:09:09"
+    },
+    {
+        "shuttle_bus_vo": {
+            "id": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+            "ctime": "2021-05-31 14:09:09",
+            "mtime": "2024-12-31 11:32:12",
+            "shuttle_name": "直达线（朝晖-屏峰）",
+            "seats": 47,
+            "apply_expired_minutes": 16,
+            "price": 400,
+            "stations_json": [
+                {
+                    "id": "1c71f2c0-0d0b-4f13-bd66-9a4afea5c380",
+                    "station_name": "邵科馆",
+                    "station_seq": 0,
+                    "latitude": 30.299008,
+                    "longitude": 120.174092
+                },
+                {
+                    "id": "150be63f-c092-4531-9ace-510f959bcced",
+                    "station_name": "西溪医院横街公交站",
+                    "station_seq": 1,
+                    "latitude": 30.236336,
+                    "longitude": 120.05609
+                },
+                {
+                    "id": "769e0c19-c621-42d8-a46e-e2bccb50d124",
+                    "station_name": "1-A区块（3#楼西侧）",
+                    "station_seq": 2,
+                    "latitude": 30.238154,
+                    "longitude": 120.051868
+                },
+                {
+                    "id": "e800520f-d4ea-4407-85ed-8e01ec25ed73",
+                    "station_name": "乌溪江路北口",
+                    "station_seq": 3,
+                    "latitude": 30.234593,
+                    "longitude": 120.045324
+                },
+                {
+                    "id": "0a57f67d-ceda-4e5e-9c36-ff2662ff21f5",
+                    "station_name": "语林楼",
+                    "station_seq": 4,
+                    "latitude": 30.230092,
+                    "longitude": 120.043752
+                }
+            ],
+            "station_names": [],
+            "departure_time": "00:00",
+            "order_mode": 10,
+            "check_mode": 20,
+            "order_mode_name": "预约模式",
+            "check_mode_name": "硬件检票",
+            "go_stations_json": [
+                {
+                    "id": "1c71f2c0-0d0b-4f13-bd66-9a4afea5c380",
+                    "station_name": "邵科馆",
+                    "station_seq": 0,
+                    "latitude": 30.299008,
+                    "longitude": 120.174092
+                },
+                {
+                    "id": "150be63f-c092-4531-9ace-510f959bcced",
+                    "station_name": "西溪医院横街公交站",
+                    "station_seq": 1,
+                    "latitude": 30.236336,
+                    "longitude": 120.05609
+                },
+                {
+                    "id": "769e0c19-c621-42d8-a46e-e2bccb50d124",
+                    "station_name": "1-A区块（3#楼西侧）",
+                    "station_seq": 2,
+                    "latitude": 30.238154,
+                    "longitude": 120.051868
+                },
+                {
+                    "id": "e800520f-d4ea-4407-85ed-8e01ec25ed73",
+                    "station_name": "乌溪江路北口",
+                    "station_seq": 3,
+                    "latitude": 30.234593,
+                    "longitude": 120.045324
+                },
+                {
+                    "id": "0a57f67d-ceda-4e5e-9c36-ff2662ff21f5",
+                    "station_name": "语林楼",
+                    "station_seq": 4,
+                    "latitude": 30.230092,
+                    "longitude": 120.043752
+                }
+            ],
+            "return_stations_json": [],
+            "auto_dispatch": false,
+            "people_vehicle": false,
+            "apply_dispatch_minutes": 0,
+            "long_distance": false,
+            "overtime": false,
+            "ticket_of_buses": true,
+            "reserved_seat": 0,
+            "other_price": {
+                "teacher": 0,
+                "student": 400,
+                "student_ticket": 0
+            },
+            "bus_reminder": 30,
+            "sort_number": 0,
+            "order_limit_on": true,
+            "order_limit_minute": 120,
+            "net_mode": 0,
+            "ticket_check_minutes": 16,
+            "bluk_order": false,
+            "is_bluk_order_staff_level": false,
+            "bluk_order_staff_levels": "[]",
+            "remainder_remind": 0,
+            "remind_admin": "[]",
+            "refund_at_dispath": false,
+            "refund_at_dispath_limit_minute": 0,
+            "is_active": true,
+            "instance_days": 10,
+            "driver_dispatch": false,
+            "bus_times": [
+                {
+                    "departure_time": "07:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "9798cc42-171c-409c-9afa-6a087a96d515",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "12:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "42e11de1-728c-4b37-bdc8-370d99e92e49",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "15:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "f31ed91f-4f76-4da8-888e-330dfff465c3",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "16:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "fed37075-380e-4bd0-bc39-1a9f99ca892c",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "17:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "86f3406d-f677-42eb-a7e7-95b2dcb6fe61",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "20:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "0380637c-b875-4780-9795-a1144f6339d4",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "21:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "5c0e1a77-9c94-4f89-a220-46313b690128",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "22:00",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "933084e3-598b-460b-b1be-ef6ec2a04ae4",
+                    "ctime": "2021-09-03 21:27:17",
+                    "mtime": "2021-09-03 21:27:17"
+                }
+            ]
+        },
+        "departure_time": "12:20",
+        "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+        "shuttle_type": -10,
+        "shuttle_type_name": "去程",
+        "punctuality_time": null,
+        "id": "42e11de1-728c-4b37-bdc8-370d99e92e49",
+        "ctime": "2021-05-31 14:09:09",
+        "mtime": "2021-05-31 14:09:09"
+    },
+    {
+        "shuttle_bus_vo": {
+            "id": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+            "ctime": "2021-05-31 14:09:09",
+            "mtime": "2024-12-31 11:32:12",
+            "shuttle_name": "直达线（朝晖-屏峰）",
+            "seats": 47,
+            "apply_expired_minutes": 16,
+            "price": 400,
+            "stations_json": [
+                {
+                    "id": "1c71f2c0-0d0b-4f13-bd66-9a4afea5c380",
+                    "station_name": "邵科馆",
+                    "station_seq": 0,
+                    "latitude": 30.299008,
+                    "longitude": 120.174092
+                },
+                {
+                    "id": "150be63f-c092-4531-9ace-510f959bcced",
+                    "station_name": "西溪医院横街公交站",
+                    "station_seq": 1,
+                    "latitude": 30.236336,
+                    "longitude": 120.05609
+                },
+                {
+                    "id": "769e0c19-c621-42d8-a46e-e2bccb50d124",
+                    "station_name": "1-A区块（3#楼西侧）",
+                    "station_seq": 2,
+                    "latitude": 30.238154,
+                    "longitude": 120.051868
+                },
+                {
+                    "id": "e800520f-d4ea-4407-85ed-8e01ec25ed73",
+                    "station_name": "乌溪江路北口",
+                    "station_seq": 3,
+                    "latitude": 30.234593,
+                    "longitude": 120.045324
+                },
+                {
+                    "id": "0a57f67d-ceda-4e5e-9c36-ff2662ff21f5",
+                    "station_name": "语林楼",
+                    "station_seq": 4,
+                    "latitude": 30.230092,
+                    "longitude": 120.043752
+                }
+            ],
+            "station_names": [],
+            "departure_time": "00:00",
+            "order_mode": 10,
+            "check_mode": 20,
+            "order_mode_name": "预约模式",
+            "check_mode_name": "硬件检票",
+            "go_stations_json": [
+                {
+                    "id": "1c71f2c0-0d0b-4f13-bd66-9a4afea5c380",
+                    "station_name": "邵科馆",
+                    "station_seq": 0,
+                    "latitude": 30.299008,
+                    "longitude": 120.174092
+                },
+                {
+                    "id": "150be63f-c092-4531-9ace-510f959bcced",
+                    "station_name": "西溪医院横街公交站",
+                    "station_seq": 1,
+                    "latitude": 30.236336,
+                    "longitude": 120.05609
+                },
+                {
+                    "id": "769e0c19-c621-42d8-a46e-e2bccb50d124",
+                    "station_name": "1-A区块（3#楼西侧）",
+                    "station_seq": 2,
+                    "latitude": 30.238154,
+                    "longitude": 120.051868
+                },
+                {
+                    "id": "e800520f-d4ea-4407-85ed-8e01ec25ed73",
+                    "station_name": "乌溪江路北口",
+                    "station_seq": 3,
+                    "latitude": 30.234593,
+                    "longitude": 120.045324
+                },
+                {
+                    "id": "0a57f67d-ceda-4e5e-9c36-ff2662ff21f5",
+                    "station_name": "语林楼",
+                    "station_seq": 4,
+                    "latitude": 30.230092,
+                    "longitude": 120.043752
+                }
+            ],
+            "return_stations_json": [],
+            "auto_dispatch": false,
+            "people_vehicle": false,
+            "apply_dispatch_minutes": 0,
+            "long_distance": false,
+            "overtime": false,
+            "ticket_of_buses": true,
+            "reserved_seat": 0,
+            "other_price": {
+                "teacher": 0,
+                "student": 400,
+                "student_ticket": 0
+            },
+            "bus_reminder": 30,
+            "sort_number": 0,
+            "order_limit_on": true,
+            "order_limit_minute": 120,
+            "net_mode": 0,
+            "ticket_check_minutes": 16,
+            "bluk_order": false,
+            "is_bluk_order_staff_level": false,
+            "bluk_order_staff_levels": "[]",
+            "remainder_remind": 0,
+            "remind_admin": "[]",
+            "refund_at_dispath": false,
+            "refund_at_dispath_limit_minute": 0,
+            "is_active": true,
+            "instance_days": 10,
+            "driver_dispatch": false,
+            "bus_times": [
+                {
+                    "departure_time": "07:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "9798cc42-171c-409c-9afa-6a087a96d515",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "12:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "42e11de1-728c-4b37-bdc8-370d99e92e49",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "15:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "f31ed91f-4f76-4da8-888e-330dfff465c3",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "16:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "fed37075-380e-4bd0-bc39-1a9f99ca892c",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "17:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "86f3406d-f677-42eb-a7e7-95b2dcb6fe61",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "20:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "0380637c-b875-4780-9795-a1144f6339d4",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "21:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "5c0e1a77-9c94-4f89-a220-46313b690128",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "22:00",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "933084e3-598b-460b-b1be-ef6ec2a04ae4",
+                    "ctime": "2021-09-03 21:27:17",
+                    "mtime": "2021-09-03 21:27:17"
+                }
+            ]
+        },
+        "departure_time": "15:30",
+        "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+        "shuttle_type": -10,
+        "shuttle_type_name": "去程",
+        "punctuality_time": null,
+        "id": "f31ed91f-4f76-4da8-888e-330dfff465c3",
+        "ctime": "2021-05-31 14:09:09",
+        "mtime": "2021-05-31 14:09:09"
+    },
+    {
+        "shuttle_bus_vo": {
+            "id": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+            "ctime": "2021-05-31 14:09:09",
+            "mtime": "2024-12-31 11:32:12",
+            "shuttle_name": "直达线（朝晖-屏峰）",
+            "seats": 47,
+            "apply_expired_minutes": 16,
+            "price": 400,
+            "stations_json": [
+                {
+                    "id": "1c71f2c0-0d0b-4f13-bd66-9a4afea5c380",
+                    "station_name": "邵科馆",
+                    "station_seq": 0,
+                    "latitude": 30.299008,
+                    "longitude": 120.174092
+                },
+                {
+                    "id": "150be63f-c092-4531-9ace-510f959bcced",
+                    "station_name": "西溪医院横街公交站",
+                    "station_seq": 1,
+                    "latitude": 30.236336,
+                    "longitude": 120.05609
+                },
+                {
+                    "id": "769e0c19-c621-42d8-a46e-e2bccb50d124",
+                    "station_name": "1-A区块（3#楼西侧）",
+                    "station_seq": 2,
+                    "latitude": 30.238154,
+                    "longitude": 120.051868
+                },
+                {
+                    "id": "e800520f-d4ea-4407-85ed-8e01ec25ed73",
+                    "station_name": "乌溪江路北口",
+                    "station_seq": 3,
+                    "latitude": 30.234593,
+                    "longitude": 120.045324
+                },
+                {
+                    "id": "0a57f67d-ceda-4e5e-9c36-ff2662ff21f5",
+                    "station_name": "语林楼",
+                    "station_seq": 4,
+                    "latitude": 30.230092,
+                    "longitude": 120.043752
+                }
+            ],
+            "station_names": [],
+            "departure_time": "00:00",
+            "order_mode": 10,
+            "check_mode": 20,
+            "order_mode_name": "预约模式",
+            "check_mode_name": "硬件检票",
+            "go_stations_json": [
+                {
+                    "id": "1c71f2c0-0d0b-4f13-bd66-9a4afea5c380",
+                    "station_name": "邵科馆",
+                    "station_seq": 0,
+                    "latitude": 30.299008,
+                    "longitude": 120.174092
+                },
+                {
+                    "id": "150be63f-c092-4531-9ace-510f959bcced",
+                    "station_name": "西溪医院横街公交站",
+                    "station_seq": 1,
+                    "latitude": 30.236336,
+                    "longitude": 120.05609
+                },
+                {
+                    "id": "769e0c19-c621-42d8-a46e-e2bccb50d124",
+                    "station_name": "1-A区块（3#楼西侧）",
+                    "station_seq": 2,
+                    "latitude": 30.238154,
+                    "longitude": 120.051868
+                },
+                {
+                    "id": "e800520f-d4ea-4407-85ed-8e01ec25ed73",
+                    "station_name": "乌溪江路北口",
+                    "station_seq": 3,
+                    "latitude": 30.234593,
+                    "longitude": 120.045324
+                },
+                {
+                    "id": "0a57f67d-ceda-4e5e-9c36-ff2662ff21f5",
+                    "station_name": "语林楼",
+                    "station_seq": 4,
+                    "latitude": 30.230092,
+                    "longitude": 120.043752
+                }
+            ],
+            "return_stations_json": [],
+            "auto_dispatch": false,
+            "people_vehicle": false,
+            "apply_dispatch_minutes": 0,
+            "long_distance": false,
+            "overtime": false,
+            "ticket_of_buses": true,
+            "reserved_seat": 0,
+            "other_price": {
+                "teacher": 0,
+                "student": 400,
+                "student_ticket": 0
+            },
+            "bus_reminder": 30,
+            "sort_number": 0,
+            "order_limit_on": true,
+            "order_limit_minute": 120,
+            "net_mode": 0,
+            "ticket_check_minutes": 16,
+            "bluk_order": false,
+            "is_bluk_order_staff_level": false,
+            "bluk_order_staff_levels": "[]",
+            "remainder_remind": 0,
+            "remind_admin": "[]",
+            "refund_at_dispath": false,
+            "refund_at_dispath_limit_minute": 0,
+            "is_active": true,
+            "instance_days": 10,
+            "driver_dispatch": false,
+            "bus_times": [
+                {
+                    "departure_time": "07:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "9798cc42-171c-409c-9afa-6a087a96d515",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "12:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "42e11de1-728c-4b37-bdc8-370d99e92e49",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "15:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "f31ed91f-4f76-4da8-888e-330dfff465c3",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "16:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "fed37075-380e-4bd0-bc39-1a9f99ca892c",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "17:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "86f3406d-f677-42eb-a7e7-95b2dcb6fe61",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "20:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "0380637c-b875-4780-9795-a1144f6339d4",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "21:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "5c0e1a77-9c94-4f89-a220-46313b690128",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "22:00",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "933084e3-598b-460b-b1be-ef6ec2a04ae4",
+                    "ctime": "2021-09-03 21:27:17",
+                    "mtime": "2021-09-03 21:27:17"
+                }
+            ]
+        },
+        "departure_time": "16:30",
+        "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+        "shuttle_type": -10,
+        "shuttle_type_name": "去程",
+        "punctuality_time": null,
+        "id": "fed37075-380e-4bd0-bc39-1a9f99ca892c",
+        "ctime": "2021-05-31 14:09:09",
+        "mtime": "2021-05-31 14:09:09"
+    },
+    {
+        "shuttle_bus_vo": {
+            "id": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+            "ctime": "2021-05-31 14:09:09",
+            "mtime": "2024-12-31 11:32:12",
+            "shuttle_name": "直达线（朝晖-屏峰）",
+            "seats": 47,
+            "apply_expired_minutes": 16,
+            "price": 400,
+            "stations_json": [
+                {
+                    "id": "1c71f2c0-0d0b-4f13-bd66-9a4afea5c380",
+                    "station_name": "邵科馆",
+                    "station_seq": 0,
+                    "latitude": 30.299008,
+                    "longitude": 120.174092
+                },
+                {
+                    "id": "150be63f-c092-4531-9ace-510f959bcced",
+                    "station_name": "西溪医院横街公交站",
+                    "station_seq": 1,
+                    "latitude": 30.236336,
+                    "longitude": 120.05609
+                },
+                {
+                    "id": "769e0c19-c621-42d8-a46e-e2bccb50d124",
+                    "station_name": "1-A区块（3#楼西侧）",
+                    "station_seq": 2,
+                    "latitude": 30.238154,
+                    "longitude": 120.051868
+                },
+                {
+                    "id": "e800520f-d4ea-4407-85ed-8e01ec25ed73",
+                    "station_name": "乌溪江路北口",
+                    "station_seq": 3,
+                    "latitude": 30.234593,
+                    "longitude": 120.045324
+                },
+                {
+                    "id": "0a57f67d-ceda-4e5e-9c36-ff2662ff21f5",
+                    "station_name": "语林楼",
+                    "station_seq": 4,
+                    "latitude": 30.230092,
+                    "longitude": 120.043752
+                }
+            ],
+            "station_names": [],
+            "departure_time": "00:00",
+            "order_mode": 10,
+            "check_mode": 20,
+            "order_mode_name": "预约模式",
+            "check_mode_name": "硬件检票",
+            "go_stations_json": [
+                {
+                    "id": "1c71f2c0-0d0b-4f13-bd66-9a4afea5c380",
+                    "station_name": "邵科馆",
+                    "station_seq": 0,
+                    "latitude": 30.299008,
+                    "longitude": 120.174092
+                },
+                {
+                    "id": "150be63f-c092-4531-9ace-510f959bcced",
+                    "station_name": "西溪医院横街公交站",
+                    "station_seq": 1,
+                    "latitude": 30.236336,
+                    "longitude": 120.05609
+                },
+                {
+                    "id": "769e0c19-c621-42d8-a46e-e2bccb50d124",
+                    "station_name": "1-A区块（3#楼西侧）",
+                    "station_seq": 2,
+                    "latitude": 30.238154,
+                    "longitude": 120.051868
+                },
+                {
+                    "id": "e800520f-d4ea-4407-85ed-8e01ec25ed73",
+                    "station_name": "乌溪江路北口",
+                    "station_seq": 3,
+                    "latitude": 30.234593,
+                    "longitude": 120.045324
+                },
+                {
+                    "id": "0a57f67d-ceda-4e5e-9c36-ff2662ff21f5",
+                    "station_name": "语林楼",
+                    "station_seq": 4,
+                    "latitude": 30.230092,
+                    "longitude": 120.043752
+                }
+            ],
+            "return_stations_json": [],
+            "auto_dispatch": false,
+            "people_vehicle": false,
+            "apply_dispatch_minutes": 0,
+            "long_distance": false,
+            "overtime": false,
+            "ticket_of_buses": true,
+            "reserved_seat": 0,
+            "other_price": {
+                "teacher": 0,
+                "student": 400,
+                "student_ticket": 0
+            },
+            "bus_reminder": 30,
+            "sort_number": 0,
+            "order_limit_on": true,
+            "order_limit_minute": 120,
+            "net_mode": 0,
+            "ticket_check_minutes": 16,
+            "bluk_order": false,
+            "is_bluk_order_staff_level": false,
+            "bluk_order_staff_levels": "[]",
+            "remainder_remind": 0,
+            "remind_admin": "[]",
+            "refund_at_dispath": false,
+            "refund_at_dispath_limit_minute": 0,
+            "is_active": true,
+            "instance_days": 10,
+            "driver_dispatch": false,
+            "bus_times": [
+                {
+                    "departure_time": "07:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "9798cc42-171c-409c-9afa-6a087a96d515",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "12:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "42e11de1-728c-4b37-bdc8-370d99e92e49",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "15:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "f31ed91f-4f76-4da8-888e-330dfff465c3",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "16:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "fed37075-380e-4bd0-bc39-1a9f99ca892c",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "17:20",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "86f3406d-f677-42eb-a7e7-95b2dcb6fe61",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "20:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "0380637c-b875-4780-9795-a1144f6339d4",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "21:30",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "5c0e1a77-9c94-4f89-a220-46313b690128",
+                    "ctime": "2021-05-31 14:09:09",
+                    "mtime": "2021-05-31 14:09:09"
+                },
+                {
+                    "departure_time": "22:00",
+                    "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "933084e3-598b-460b-b1be-ef6ec2a04ae4",
+                    "ctime": "2021-09-03 21:27:17",
+                    "mtime": "2021-09-03 21:27:17"
+                }
+            ]
+        },
+        "departure_time": "20:30",
+        "shuttle_bus": "a0789f00-a0d0-4a5f-9773-ce3019395ab3",
+        "shuttle_type": -10,
+        "shuttle_type_name": "去程",
+        "punctuality_time": null,
+        "id": "0380637c-b875-4780-9795-a1144f6339d4",
+        "ctime": "2021-05-31 14:09:09",
+        "mtime": "2021-05-31 14:09:09"
+    }
+]
