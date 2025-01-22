@@ -40,7 +40,7 @@ func initUserRoutes(api *gin.RouterGroup) {
 
 		// Notice related routes
 		user.GET("/notice", usercontroller.GetNotice)
-		user.POST("/notice/:noticeID", usercontroller.MarkReadedNotice)
+		user.PATCH("/notice/:noticeID", usercontroller.MarkReadedNotice)
 		user.GET("/notice/unread", usercontroller.GetUnreadCount)
 
 		// Other routes
