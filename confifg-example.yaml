@@ -1,10 +1,3 @@
-# 易校园校车后端
-
-# 配置
-
-修改配置文件，如 confifg-example.yaml 中所示
-
-```yaml
 eBus:
     host: https://api.pinbayun.com
     token: "ccdde56f94677246698678908ca17206a3d6c717"
@@ -21,10 +14,3 @@ timer:
 
 server:
     port: 8080
-```
-
-# 运行
-
-```bash
-go run main.go
-```

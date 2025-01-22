@@ -1,6 +1,5 @@
-package userService
+package models
 
-// ExtraParam 结构体
 type ExtraParam struct {
 	ActionType int         `json:"action_type"`
 	To         interface{} `json:"to"`
@@ -9,8 +8,6 @@ type ExtraParam struct {
 // Notice 结构体
 type Notice struct {
 	ID         string     `json:"id"`
-	Ctime      string     `json:"ctime"`
-	Mtime      string     `json:"mtime"`
 	MsgType    string     `json:"msg_type"`
 	MsgID      string     `json:"msg_id"`
 	Title      string     `json:"title"`

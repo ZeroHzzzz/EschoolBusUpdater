@@ -1,6 +1,8 @@
 package redis
 
-import "github.com/go-redis/redis"
+import (
+	"github.com/go-redis/redis"
+)
 
 type redisConfig struct {
 	Host     string
@@ -23,3 +25,8 @@ func init() {
 	RedisInfo = info
 
 }
+
+func TestConnection() (bool,error) {
+	_, err := RedisClient.Ping().Result()
+	return err==nil, err
+} 

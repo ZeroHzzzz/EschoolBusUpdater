@@ -1,0 +1,337 @@
+{
+    "count": 1,
+    "num_pages": 1,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "shuttle_bus_date_vo": {
+                "shuttle_bus_vo": {
+                    "id": "a899298d-12ac-4fd6-b872-af1a5e11a714",
+                    "ctime": "2022-10-20 20:40:49",
+                    "mtime": "2024-07-19 17:18:34",
+                    "shuttle_name": "9号线（莫干山-屏峰）",
+                    "seats": 0,
+                    "apply_expired_minutes": 16,
+                    "price": 0,
+                    "stations_json": [],
+                    "station_names": "",
+                    "departure_time": "00:00",
+                    "order_mode": 10,
+                    "check_mode": 20,
+                    "order_mode_name": "预约模式",
+                    "check_mode_name": "硬件检票",
+                    "go_stations_json": [
+                        {
+                            "id": "dde5e5e2-5eff-458b-ac15-84d117df7261",
+                            "station_name": "莫干山校区",
+                            "station_seq": 0,
+                            "latitude": 30.557927,
+                            "longitude": 120.036576
+                        },
+                        {
+                            "id": "b59d8ac2-437f-4617-8660-567ab4dd0009",
+                            "station_name": "华东陶瓷建材市场公交站",
+                            "station_seq": 1,
+                            "latitude": 30.31834,
+                            "longitude": 120.102251
+                        },
+                        {
+                            "id": "c0a451f2-1f5d-494b-a1c6-d2a80afebddb",
+                            "station_name": "三坝公交站",
+                            "station_seq": 2,
+                            "latitude": 30.305117,
+                            "longitude": 120.104439
+                        },
+                        {
+                            "id": "23d4a7ce-63c5-4de2-9313-0611d4e1a5c4",
+                            "station_name": "政新花园公交站",
+                            "station_seq": 3,
+                            "latitude": 30.296188,
+                            "longitude": 120.104578
+                        },
+                        {
+                            "id": "3877bdcc-7e73-4ab1-a35b-283a33790357",
+                            "station_name": "古墩路金月巷公交站",
+                            "station_seq": 4,
+                            "latitude": 30.279816,
+                            "longitude": 120.10765
+                        },
+                        {
+                            "id": "fab5f24e-f826-4e48-83ed-5537c10ea0bb",
+                            "station_name": "留下北公交站",
+                            "station_seq": 5,
+                            "latitude": 30.250428,
+                            "longitude": 120.059268
+                        },
+                        {
+                            "id": "ad257597-c56b-4451-b89c-869a6ad5a7c5",
+                            "station_name": "西溪医院横街公交站",
+                            "station_seq": 6,
+                            "latitude": 30.236814,
+                            "longitude": 120.056285
+                        },
+                        {
+                            "id": "ca6dd877-fe78-4e0f-804f-470604df1d2a",
+                            "station_name": "1A区块/3号楼西侧",
+                            "station_seq": 7,
+                            "latitude": 30.238027,
+                            "longitude": 120.051897
+                        },
+                        {
+                            "id": "9b578c3d-8680-4595-9d03-6f840f8b4591",
+                            "station_name": "乌溪江路北口",
+                            "station_seq": 8,
+                            "latitude": 30.235733,
+                            "longitude": 120.047383
+                        },
+                        {
+                            "id": "d9cc56a0-1a5b-4d4a-a85e-f9cb3be28fc0",
+                            "station_name": "古运河路西口（图书馆西南侧）",
+                            "station_seq": 9,
+                            "latitude": 30.229598,
+                            "longitude": 120.039603
+                        },
+                        {
+                            "id": "fb42bfb1-4a0b-4bd6-9b27-17cee83230f5",
+                            "station_name": "语林楼",
+                            "station_seq": 10,
+                            "latitude": 30.230062,
+                            "longitude": 120.044001
+                        }
+                    ],
+                    "return_stations_json": [],
+                    "auto_dispatch": false,
+                    "people_vehicle": false,
+                    "apply_dispatch_minutes": 0,
+                    "long_distance": false,
+                    "overtime": false,
+                    "ticket_of_buses": true,
+                    "reserved_seat": 0,
+                    "other_price": "{\"teacher\": 0, \"student\": 0, \"student_ticket\": 0}",
+                    "bus_reminder": 30,
+                    "sort_number": 14,
+                    "order_limit_on": true,
+                    "order_limit_minute": 120,
+                    "net_mode": 0,
+                    "ticket_check_minutes": 16,
+                    "bluk_order": false,
+                    "is_bluk_order_staff_level": false,
+                    "bluk_order_staff_levels": "[]",
+                    "remainder_remind": 0,
+                    "remind_admin": "[]",
+                    "refund_at_dispath": false,
+                    "refund_at_dispath_limit_minute": 0,
+                    "is_active": true,
+                    "instance_days": 10,
+                    "driver_dispatch": false
+                },
+                "shuttle_bus_time_vo": {
+                    "shuttle_bus_vo": {
+                        "id": "a899298d-12ac-4fd6-b872-af1a5e11a714",
+                        "ctime": "2022-10-20 20:40:49",
+                        "mtime": "2024-07-19 17:18:34",
+                        "shuttle_name": "9号线（莫干山-屏峰）",
+                        "seats": 0,
+                        "apply_expired_minutes": 16,
+                        "price": 0,
+                        "stations_json": [],
+                        "station_names": "",
+                        "departure_time": "00:00",
+                        "order_mode": 10,
+                        "check_mode": 20,
+                        "order_mode_name": "预约模式",
+                        "check_mode_name": "硬件检票",
+                        "go_stations_json": [
+                            {
+                                "id": "dde5e5e2-5eff-458b-ac15-84d117df7261",
+                                "station_name": "莫干山校区",
+                                "station_seq": 0,
+                                "latitude": 30.557927,
+                                "longitude": 120.036576
+                            },
+                            {
+                                "id": "b59d8ac2-437f-4617-8660-567ab4dd0009",
+                                "station_name": "华东陶瓷建材市场公交站",
+                                "station_seq": 1,
+                                "latitude": 30.31834,
+                                "longitude": 120.102251
+                            },
+                            {
+                                "id": "c0a451f2-1f5d-494b-a1c6-d2a80afebddb",
+                                "station_name": "三坝公交站",
+                                "station_seq": 2,
+                                "latitude": 30.305117,
+                                "longitude": 120.104439
+                            },
+                            {
+                                "id": "23d4a7ce-63c5-4de2-9313-0611d4e1a5c4",
+                                "station_name": "政新花园公交站",
+                                "station_seq": 3,
+                                "latitude": 30.296188,
+                                "longitude": 120.104578
+                            },
+                            {
+                                "id": "3877bdcc-7e73-4ab1-a35b-283a33790357",
+                                "station_name": "古墩路金月巷公交站",
+                                "station_seq": 4,
+                                "latitude": 30.279816,
+                                "longitude": 120.10765
+                            },
+                            {
+                                "id": "fab5f24e-f826-4e48-83ed-5537c10ea0bb",
+                                "station_name": "留下北公交站",
+                                "station_seq": 5,
+                                "latitude": 30.250428,
+                                "longitude": 120.059268
+                            },
+                            {
+                                "id": "ad257597-c56b-4451-b89c-869a6ad5a7c5",
+                                "station_name": "西溪医院横街公交站",
+                                "station_seq": 6,
+                                "latitude": 30.236814,
+                                "longitude": 120.056285
+                            },
+                            {
+                                "id": "ca6dd877-fe78-4e0f-804f-470604df1d2a",
+                                "station_name": "1A区块/3号楼西侧",
+                                "station_seq": 7,
+                                "latitude": 30.238027,
+                                "longitude": 120.051897
+                            },
+                            {
+                                "id": "9b578c3d-8680-4595-9d03-6f840f8b4591",
+                                "station_name": "乌溪江路北口",
+                                "station_seq": 8,
+                                "latitude": 30.235733,
+                                "longitude": 120.047383
+                            },
+                            {
+                                "id": "d9cc56a0-1a5b-4d4a-a85e-f9cb3be28fc0",
+                                "station_name": "古运河路西口（图书馆西南侧）",
+                                "station_seq": 9,
+                                "latitude": 30.229598,
+                                "longitude": 120.039603
+                            },
+                            {
+                                "id": "fb42bfb1-4a0b-4bd6-9b27-17cee83230f5",
+                                "station_name": "语林楼",
+                                "station_seq": 10,
+                                "latitude": 30.230062,
+                                "longitude": 120.044001
+                            }
+                        ],
+                        "return_stations_json": [],
+                        "auto_dispatch": false,
+                        "people_vehicle": false,
+                        "apply_dispatch_minutes": 0,
+                        "long_distance": false,
+                        "overtime": false,
+                        "ticket_of_buses": true,
+                        "reserved_seat": 0,
+                        "other_price": "{\"teacher\": 0, \"student\": 0, \"student_ticket\": 0}",
+                        "bus_reminder": 30,
+                        "sort_number": 14,
+                        "order_limit_on": true,
+                        "order_limit_minute": 120,
+                        "net_mode": 0,
+                        "ticket_check_minutes": 16,
+                        "bluk_order": false,
+                        "is_bluk_order_staff_level": false,
+                        "bluk_order_staff_levels": "[]",
+                        "remainder_remind": 0,
+                        "remind_admin": "[]",
+                        "refund_at_dispath": false,
+                        "refund_at_dispath_limit_minute": 0,
+                        "is_active": true,
+                        "instance_days": 10,
+                        "driver_dispatch": false
+                    },
+                    "departure_time": "08:00",
+                    "shuttle_bus": "a899298d-12ac-4fd6-b872-af1a5e11a714",
+                    "shuttle_type": -10,
+                    "shuttle_type_name": "去程",
+                    "punctuality_time": null,
+                    "id": "4dba3520-2cb0-4c21-a743-78590ff20f0a",
+                    "ctime": "2022-10-20 21:40:37",
+                    "mtime": "2022-10-20 21:40:37"
+                },
+                "shuttle_name": "9号线（莫干山-屏峰）",
+                "seats": 47,
+                "departure_date": "2024-08-06",
+                "apply_expired_datetime": "2024-08-06 07:44:00",
+                "price": 0,
+                "apply_dispatch_datetime": "2024-08-06 07:44:00",
+                "stations_json": [
+                    {
+                        "station_name": "莫干山校区",
+                        "station_seq": 0,
+                        "num": 7
+                    },
+                    {
+                        "station_name": "华东陶瓷建材市场公交站",
+                        "station_seq": 1,
+                        "num": 0
+                    },
+                    {
+                        "station_name": "三坝公交站",
+                        "station_seq": 2,
+                        "num": 0
+                    },
+                    {
+                        "station_name": "政新花园公交站",
+                        "station_seq": 3,
+                        "num": 1
+                    },
+                    {
+                        "station_name": "古墩路金月巷公交站",
+                        "station_seq": 4,
+                        "num": 0
+                    }
+                ],
+                "station_names": "",
+                "departure_datetime": "2024-08-06 08:00:00",
+                "remaining_seats": 38,
+                "clock_time": null,
+                "shuttle_bus": "a899298d-12ac-4fd6-b872-af1a5e11a714",
+                "shuttle_bus_time": "4dba3520-2cb0-4c21-a743-78590ff20f0a",
+                "status": 20,
+                "status_name": "开售中",
+                "dispath_status": 20,
+                "dispatch_status_name": "已排班",
+                "extra_order_push": null,
+                "ticket_check_datetime": "2024-08-06 07:44:00",
+                "id": "e48ca305-0e6d-4508-bce8-8a7d690ee9d3",
+                "ctime": "2024-06-27 12:11:44",
+                "mtime": "2024-08-06 00:40:37"
+            },
+            "car_flag": "",
+            "shuttle_bus_id": "a899298d-12ac-4fd6-b872-af1a5e11a714",
+            "pay_time": "2024-08-06 00:40:37",
+            "pay_amount": 0,
+            "pay_type": "free",
+            "status": 20,
+            "check_time": null,
+            "has_ticket": false,
+            "checkin_type": 10,
+            "shuttle_bus": "a899298d-12ac-4fd6-b872-af1a5e11a714",
+            "shuttle_type": "去程",
+            "departure_datetime": "2024-08-06 08:00:00",
+            "admin": null,
+            "status_name": "已报名",
+            "boarding_station": null,
+            "busvehicle": null,
+            "busdriver": null,
+            "driver_name": null,
+            "driver_phone": null,
+            "vehicle_no": null,
+            "approval_status": 10,
+            "reason": null,
+            "id": "9e4991e0-14db-4257-9dc1-162209991651",
+            "ctime": "2024-08-06 00:40:37",
+            "mtime": "2024-08-06 00:40:37",
+            "is_commit": false,
+            "busfavourite": false
+        }
+    ]
+}
