@@ -2,7 +2,7 @@
 
 # 配置
 
-修改配置文件，如 confifg-example.yaml 中所示
+修改配置文件，如 config-example.yaml 中所示
 
 ```yaml
 eBus:
