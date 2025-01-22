@@ -1,12 +1,5 @@
 package api
 
-import (
-	"EBUSU/config/config"
-)
-
-var EBusHost = config.Config.GetString("eBus.host")
-var SystemToken = config.Config.GetString("eBus.token")
-
 type EBusApi string
 
 const (

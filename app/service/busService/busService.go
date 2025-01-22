@@ -4,6 +4,7 @@ import (
 	"EBUSU/app/apiException"
 	"EBUSU/app/fetch"
 	"EBUSU/app/models"
+	constants "EBUSU/app/utils/const"
 	"EBUSU/config/api"
 	"EBUSU/config/redis"
 	"encoding/json"
@@ -14,7 +15,7 @@ import (
 
 // GetBusInfo 获取公交信息
 func FetchBusInfo(authToken string, page int, pageSize int) ([]models.BusInfo, error) {
-	url := api.EBusHost + string(api.BusInfo)
+	url := constants.EBusHost + string(api.BusInfo)
 
 	// 发起请求
 	resp, err := fetch.Client.R().
@@ -78,7 +79,7 @@ func FetchBusInfo(authToken string, page int, pageSize int) ([]models.BusInfo, e
 }
 
 func FetchBusTime(authToken, busID string, shuttle_type int) ([]models.BusTime, error) {
-	url := api.EBusHost + string(api.BusTime)
+	url := constants.EBusHost + string(api.BusTime)
 	url = strings.Replace(string(url), "{id}", busID, 1)
 
 	resp, err := fetch.Client.R().
@@ -113,7 +114,7 @@ type responseStruct struct {
 
 func FetchBusRecords(authToken, page, pageSize, status string) ([]models.BusRecords, error) {
 	// status参数为10或者20返回未开始预约信息，为30或者40返回已结束的成功预定信息，为0返回所有预定记录（包括已经取消）
-	url := api.EBusHost + string(api.BusRecords)
+	url := constants.EBusHost + string(api.BusRecords)
 
 	// 发起请求
 	resp, err := fetch.Client.R().

@@ -3,6 +3,7 @@ package updateService
 import (
 	"EBUSU/app/models"
 	"EBUSU/app/service/busService"
+	"EBUSU/app/service/userService"
 	"EBUSU/config/redis"
 	"encoding/json"
 	"log"
@@ -25,8 +26,14 @@ func GetBusUpdateStatus() (models.BusStatus, error) {
 	}, nil
 }
 
-func BusInfoUpdater(authToken string) error {
-	err := redis.RedisClient.Set("LastUpdateTime", time.Now().Format(time.RFC3339), 0).Err()
+func BusInfoUpdater(unionID string) error {
+	authToken, err := userService.LoginByYxy(unionID)
+	if err != nil {
+		redis.RedisClient.Set("LastUpdateStatus", "AuthWrong", 0)
+		return err
+	}
+
+	err = redis.RedisClient.Set("LastUpdateTime", time.Now().Format(time.RFC3339), 0).Err()
 	if err != nil {
 		return err
 	}
@@ -43,7 +50,7 @@ func BusInfoUpdater(authToken string) error {
 	busInfoList, err := busService.FetchBusInfo(authToken, defaultPage, defaultPageSize)
 	if err != nil {
 		log.Printf("Error: failed to get bus info: %v", err)
-		redis.RedisClient.Set("LastUpdateStatus", "Wrong", 0)
+		redis.RedisClient.Set("LastUpdateStatus", "NetWorkError", 0)
 		return err
 	}
 
@@ -51,7 +58,7 @@ func BusInfoUpdater(authToken string) error {
 		timeList, timeErr := busService.FetchBusTime(authToken, busInfoList[i].ID, shuttle_type)
 		if timeErr != nil {
 			log.Printf("Error: failed to get bus time for ID %s: %v", busInfoList[i].ID, timeErr)
-			redis.RedisClient.Set("LastUpdateStatus", "Wrong", 0)
+			redis.RedisClient.Set("LastUpdateStatus", "NetWorkError", 0)
 			continue
 		}
 		busInfoList[i].BusTimeList = timeList
@@ -69,19 +76,19 @@ func BusInfoUpdater(authToken string) error {
 	// err = redis.RedisClient.HSet("BusInfo:"+)
 	err = redis.RedisClient.Del("BusInfo").Err()
 	if err != nil {
-		redis.RedisClient.Set("LastUpdateStatus", "Wrong", 0)
+		redis.RedisClient.Set("LastUpdateStatus", "RedisError", 0)
 		return err
 	}
 
 	for _, busInfo := range busInfoList {
 		busInfoData, err := json.Marshal(busInfo)
 		if err != nil {
-			redis.RedisClient.Set("LastUpdateStatus", "Wrong", 0)
+			redis.RedisClient.Set("LastUpdateStatus", "RedisError", 0)
 			return err
 		}
 		err = redis.RedisClient.RPush("BusInfo", busInfoData).Err()
 		if err != nil {
-			redis.RedisClient.Set("LastUpdateStatus", "Wrong", 0)
+			redis.RedisClient.Set("LastUpdateStatus", "RedisError", 0)
 			return err
 		}
 	}

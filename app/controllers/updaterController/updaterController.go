@@ -3,7 +3,7 @@ package updatercontroller
 import (
 	"EBUSU/app/service/updateService"
 	"EBUSU/app/utils"
-	"EBUSU/config/config"
+	constants "EBUSU/app/utils/const"
 
 	"github.com/gin-gonic/gin"
 )
@@ -18,9 +18,8 @@ func GetUpdateStatus(c *gin.Context) {
 }
 
 func UpdateBusInfo(c *gin.Context) {
-	authToken := config.Config.GetString("eBus.token")
 	// fmt.Println("authToken", authToken)
-	err := updateService.BusInfoUpdater(authToken)
+	err := updateService.BusInfoUpdater(constants.SystemUid)
 	if err != nil {
 		c.AbortWithError(200, err)
 		return

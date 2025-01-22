@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func Run(authToken string, interval time.Duration) {
+func Run(unionID string, interval time.Duration) {
 	ticker := time.NewTicker(interval)
 	defer ticker.Stop()
 
@@ -15,7 +15,7 @@ func Run(authToken string, interval time.Duration) {
 		for {
 			select {
 			case <-ticker.C:
-				err := BusInfoUpdater(authToken)
+				err := BusInfoUpdater(unionID)
 				if err != nil {
 					log.Printf("Error updating bus info: %v", err)
 				}

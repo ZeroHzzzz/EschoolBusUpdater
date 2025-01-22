@@ -4,6 +4,7 @@ import (
 	"EBUSU/app/apiException"
 	"EBUSU/app/fetch"
 	"EBUSU/app/models"
+	constants "EBUSU/app/utils/const"
 	"EBUSU/config/api"
 	"encoding/json"
 	"log"
@@ -16,7 +17,7 @@ type UnreadCount struct {
 }
 
 func GetUnreadCount(authToken string) (int, error) {
-	url := api.EBusHost + string(api.UserUnreadCount)
+	url := constants.EBusHost + string(api.UserUnreadCount)
 	resp, err := fetch.Client.R().
 		SetHeader("Authorization", authToken).
 		SetHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0").
@@ -47,7 +48,7 @@ func GetUnreadCount(authToken string) (int, error) {
 
 func CheckTokenAlive(authToken string) error {
 	// 利用未读信息接口做Token存活性检测
-	url := api.EBusHost + string(api.UserUnreadCount)
+	url := constants.EBusHost + string(api.UserUnreadCount)
 	resp, err := fetch.Client.R().
 		SetHeader("Authorization", authToken).
 		SetHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0").
@@ -74,7 +75,7 @@ type QrcodeString struct {
 }
 
 func GetQrcode(authToken string) (string, error) {
-	url := api.EBusHost + string(api.UserQrcode)
+	url := constants.EBusHost + string(api.UserQrcode)
 	resp, err := fetch.Client.R().
 		SetHeader("Authorization", authToken).
 		SetHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0").
@@ -114,7 +115,7 @@ func GetQrcode(authToken string) (string, error) {
 
 func GetNotice(authToken, page, pageSize, numPages string) ([]models.Notice, error) {
 	// status参数为10或者20返回未开始预约信息，为30或者40返回已结束的成功预定信息，为0返回所有预定记录（包括已经取消）
-	url := api.EBusHost + string(api.UserNotice)
+	url := constants.EBusHost + string(api.UserNotice)
 
 	// 发起请求
 	resp, err := fetch.Client.R().
@@ -179,7 +180,7 @@ func GetNotice(authToken, page, pageSize, numPages string) ([]models.Notice, err
 
 func MarkReaded(authToken, noticeID string) error {
 	// 标记已读信息
-	url := api.EBusHost + string(api.UserReaded)
+	url := constants.EBusHost + string(api.UserReaded)
 	url = strings.Replace(string(url), "{id}", noticeID, 1)
 
 	_, err := fetch.Client.R().
@@ -199,7 +200,7 @@ func MarkReaded(authToken, noticeID string) error {
 
 func LoginByPhone(phone, password string) (string, error) {
 	// 登录接口
-	url := api.EBusHost + string(api.UserLoginByPhone)
+	url := constants.EBusHost + string(api.UserLoginByPhone)
 
 	// 发起请求
 	resp, err := fetch.Client.R().
@@ -233,21 +234,21 @@ func LoginByPhone(phone, password string) (string, error) {
 
 func LoginByYxy(unionid string) (string, error) {
 	// Step 1: Get authentication redirect
-	token, err := getAuthRedirect(unionid)
+	code, err := getAuthRedirect(unionid)
 	if err != nil {
 		return "", err
 	}
 
 	// Step 2: Perform YXY login
-	return performYxyLogin(token.openid, token.corpcode)
+	return performYxyLogin(code.openid, code.corpcode)
 }
 
-type authToken struct {
+type authCode struct {
 	openid   string
 	corpcode string
 }
 
-func getAuthRedirect(unionid string) (*authToken, error) {
+func getAuthRedirect(unionid string) (*authCode, error) {
 	authurl := string(api.UserOauthLogin)
 	resp, err := fetch.Client.R().
 		SetQueryParams(map[string]string{
@@ -268,17 +269,17 @@ func getAuthRedirect(unionid string) (*authToken, error) {
 	if resp == nil || resp.RawResponse == nil || resp.RawResponse.Request == nil || resp.RawResponse.Request.Response == nil {
 		return nil, apiException.ResponseError
 	}
-
+	// fmt.Println("111")
 	redirectURL := resp.RawResponse.Request.Response.Header.Get("Location")
 	if redirectURL == "" {
 		return nil, apiException.ResponseError
 	}
-
+	// fmt.Println("222")
 	parsedURL, err := url.Parse(redirectURL)
 	if err != nil {
 		return nil, apiException.ResponseError
 	}
-
+	// fmt.Println("333")
 	queryParams := parsedURL.Query()
 	openid := queryParams.Get("openid")
 	corpcode := queryParams.Get("corpcode")
@@ -287,11 +288,11 @@ func getAuthRedirect(unionid string) (*authToken, error) {
 		return nil, apiException.ResponseError
 	}
 
-	return &authToken{openid: openid, corpcode: corpcode}, nil
+	return &authCode{openid: openid, corpcode: corpcode}, nil
 }
 
 func performYxyLogin(openid, corpcode string) (string, error) {
-	loginURL := api.EBusHost + string(api.UserLoginByYxy)
+	loginURL := constants.EBusHost + string(api.UserLoginByYxy)
 	resp, err := fetch.Client.R().
 		SetBody(map[string]string{
 			"openid":   openid,
