@@ -36,7 +36,7 @@ func GetNotice(c *gin.Context) {
 
 	notice, err := userService.GetNotice(token, page, pageSize, numPages)
 	if err != nil {
-		c.AbortWithError(200, apiException.ParamError)
+		c.AbortWithError(200, err)
 		return
 	}
 	utils.JsonSuccessResponse(c, gin.H{"notice": notice})
@@ -85,6 +85,7 @@ func CheckTokenAlive(c *gin.Context) {
 	err := userService.CheckTokenAlive(token)
 	if err != nil {
 		c.AbortWithError(200, err)
+		return
 	}
 	utils.JsonSuccessResponse(c, gin.H{"alive": true})
 }

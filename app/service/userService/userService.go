@@ -27,8 +27,10 @@ func GetUnreadCount(authToken string) (int, error) {
 		Get(url)
 
 	if resp.StatusCode() == 400 {
-		log.Printf("Auth Error: %v\n", err)
+		log.Printf("Received non-OK HTTP status from %s: %d\n", url, resp.StatusCode())
 		return 0, apiException.AuthWrong
+	} else if resp.StatusCode() == 500 {
+		return 0, apiException.ServerError
 	}
 
 	if err != nil {
@@ -62,9 +64,11 @@ func CheckTokenAlive(authToken string) error {
 		return apiException.RequestError
 	}
 
-	if resp.StatusCode() != 200 {
+	if resp.StatusCode() == 400 {
 		log.Printf("Received non-OK HTTP status from %s: %d\n", url, resp.StatusCode())
 		return apiException.AuthWrong
+	} else if resp.StatusCode() == 500 {
+		return apiException.ServerError
 	}
 
 	return nil
@@ -183,7 +187,7 @@ func MarkReaded(authToken, noticeID string) error {
 	url := constants.EBusHost + string(api.UserReaded)
 	url = strings.Replace(string(url), "{id}", noticeID, 1)
 
-	_, err := fetch.Client.R().
+	resp, err := fetch.Client.R().
 		SetHeader("Authorization", authToken).
 		SetHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0").
 		SetHeader("Accept", "*/*").
@@ -195,6 +199,14 @@ func MarkReaded(authToken, noticeID string) error {
 		log.Printf("Error sending request to %s: %v\n", url, err)
 		return apiException.RequestError
 	}
+
+	if resp.StatusCode() == 400 {
+		log.Printf("Received non-OK HTTP status from %s: %d\n", url, resp.StatusCode())
+		return apiException.AuthWrong
+	} else if resp.StatusCode() == 500 {
+		return apiException.ServerError
+	}
+
 	return nil
 }
 

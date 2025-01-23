@@ -36,10 +36,18 @@ func GetBusInfo(c *gin.Context) {
 		return
 	}
 
+	totalItems := len(busInfoList)
 	start := (pageInt - 1) * pageSizeInt
+	if start >= totalItems {
+		utils.JsonSuccessResponse(c, []interface{}{})
+		return
+	}
 	end := pageInt * pageSizeInt
+	if end > totalItems {
+		end = totalItems
+	}
 
-	utils.JsonSuccessResponse(c, busInfoList[max(start, 0):min(end, len(busInfoList))])
+	utils.JsonSuccessResponse(c, busInfoList[start:end])
 	// fmt.Println(busInfoList[start:end])
 }
 
@@ -74,8 +82,16 @@ func GetBusRecords(c *gin.Context) {
 		return
 	}
 
+	totalItems := len(busRecords)
 	start := (pageInt - 1) * pageSizeInt
+	if start >= totalItems {
+		utils.JsonSuccessResponse(c, []interface{}{})
+		return
+	}
 	end := pageInt * pageSizeInt
+	if end > totalItems {
+		end = totalItems
+	}
 
-	utils.JsonSuccessResponse(c, busRecords[max(start, 0):min(end, len(busRecords))])
+	utils.JsonSuccessResponse(c, busRecords[start:end])
 }
