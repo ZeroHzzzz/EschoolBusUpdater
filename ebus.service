@@ -1,0 +1,11 @@
+[Unit]
+Description=The Backend of the EschoolBus service
+[Service]
+Type=simple
+ExecStart=/opt/go/EschoolBusUpdater/app
+WorkingDirectory=/opt/go/EschoolBusUpdater
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
